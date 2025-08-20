@@ -1,0 +1,5 @@
+{
+  "name": "KTM Generator",
+  "description": "An application to automatically generate a student ID card based on a template by allowing users to input their name, ID, major, and upload a photo.",
+  "requestFramePermissions": []
+}

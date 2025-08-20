@@ -1,0 +1,8 @@
+
+import React from 'react';
+
+export const QrCode: React.FC = () => (
+  <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#000000" d="M112 56H40v72h16V72h56zm-40 88H56v48h48v-16H72zM216 56h-72v16h56v56h16zm-56 128h48v-48h16v64h-64zM40 40h72v16H40zM40 0h16v40H40zm160 128h16v24h24v16h-40zM0 40h40V0H0zm216 216h40v-40h-16v24h-24zM168 40h48V0h-48zm48 16v24h24V56zM40 168H0v48h40zm16-40H0v16h56v-16zm96 72h16v48h-16zm-32-16h48v-16h-48zm32 16h16v16h-16zm-80-64H80v48h16v-32h16v32h16V96H96v32H80zm32 16h16v16h-16zm-32 0H80v16h16zm16-16h16v16h-16zm-32 0H80v16h16zm16-16h16v16h-16zm-32 0H80v16h16z"></path>
+  </svg>
+);
