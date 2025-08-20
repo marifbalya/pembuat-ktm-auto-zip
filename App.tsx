@@ -12,6 +12,10 @@ import { addNameToDB, nameExistsInDB, saveTemplate, getTemplate, removeTemplate 
 import { SettingsIcon } from './components/icons/SettingsIcon';
 import SettingsModal from './components/SettingsModal';
 
+// PERINGATAN: Menyimpan kunci API dalam kode sisi klien tidak aman dan dapat menyebabkan penyalahgunaan.
+// Ini hanya untuk tujuan demonstrasi. Dalam aplikasi nyata, gunakan proksi backend.
+const API_KEY = "AIzaSyCmfIUc0BjMLhBZOSGrWcLf0Ck_MtBEfwA";
+
 // Component defined outside of App to prevent re-creation on re-renders
 interface InputWithCopyProps {
   id: string;
@@ -217,7 +221,7 @@ const App: React.FC = () => {
   };
 
   const generateUniqueStudentData = useCallback(async (): Promise<CardProps> => {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     let details: any;
     let fullName: string = '';
